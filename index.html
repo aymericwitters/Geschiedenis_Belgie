@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historisch Duffel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Het Menu (Home) -->
+    <div id="home-menu" class="page active">
+        <header class="main-header">
+            <div class="header-overlay">
+                <h1>Duffel door de Eeuwen</h1>
+                <p>Van de Reuzen tot de Helden van de Oorlog</p>
+            </div>
+        </header>
+        <nav class="menu-grid">
+            <button onclick="showPage('reuzen-page')" class="menu-card">De Reuzen van Duffel</button>
+            <button onclick="showPage('heksen-page')" class="menu-card">De Heksen van de Streek</button>
+            <button onclick="showPage('figuren-page')" class="menu-card">Machtige Heersers</button>
+            <button onclick="showPage('oorlog-page')" class="menu-card">De Wereldoorlogen</button>
+        </nav>
+    </div>
+
+    <!-- Pagina: De Reuzen -->
+    <div id="reuzen-page" class="page content-view">
+        <button onclick="showPage('home-menu')" class="oval-back-btn">⬅ Terug naar Menu</button>
+        <div class="content-wrapper">
+            <h1>De Reuzen van Duffel</h1>
+            <ul class="reuzen-lijst">
+                <li><strong>Reus (Goliath)</strong> - De Vader</li>
+                <li><strong>Reuzin</strong> - De Moeder</li>
+                <li><strong>Janneke, Mieke & Kinnebaba</strong> - De Kinderen</li>
+                <li><strong>De Moor & De Morin</strong> - De Begeleiders</li>
+            </ul>
+            <p class="author-credit">Gedocumenteerd door auteur: <strong>Kurt Gijzels</strong></p>
+        </div>
+    </div>
+
+    <!-- Pagina: Heksen -->
+    <div id="heksen-page" class="page content-view">
+        <button onclick="showPage('home-menu')" class="oval-back-btn">⬅ Terug naar Menu</button>
+        <div class="content-wrapper">
+            <h1>Hekserij in de Regio</h1>
+            <p>De geschiedenis herdenkt <strong>Anna Broodhuis</strong> en <strong>Katelijne van den Bulke</strong>, slachtoffers van de heksenvervolging in de 16e eeuw. Ook de legende van <strong>Janne Panne</strong> blijft verbonden met deze donkere tijd.</p>
+        </div>
+    </div>
+
+    <!-- Pagina: Figuren -->
+    <div id="figuren-page" class="page content-view">
+        <button onclick="showPage('home-menu')" class="oval-back-btn">⬅ Terug naar Menu</button>
+        <div class="content-wrapper">
+            <h1>Machtige Heersers</h1>
+            <section class="bio-section">
+                <h2>Keizer Karel V</h2>
+                <p>Geboren in <strong>Gent (1500)</strong> en opgegroeid in Mechelen. Hij was de machtigste vorst van zijn tijd.</p>
+            </section>
+            
+            <section class="bio-section">
+                <h2>Maarten van Rossum</h2>
+                <p>De gevreesde legeraanvoerder uit Gelre die in 1542 plunderend door de regio trok. Hij staat bekend om zijn tactiek van brandschatting.</p>
+            </section>
+
+            <section class="bio-section">
+                <h2>Napoleon Bonaparte</h2>
+                <p>Geboren op <strong>Corsica (1769)</strong>. Hij klom op vanuit de militaire school tot keizer van Frankrijk.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Pagina: Oorlogen -->
+    <div id="oorlog-page" class="page content-view">
+        <button onclick="showPage('home-menu')" class="oval-back-btn">⬅ Terug naar Menu</button>
+        <div class="content-wrapper">
+            <h1>De Wereldoorlogen</h1>
+            <section class="bio-section">
+                <h2>WO I & WO II</h2>
+                <p>Duffel leed zwaar onder de bombardementen bij het Fort van Duffel in 1914 en de strategische strijd om de spoorwegbrug in 1940-1945.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
